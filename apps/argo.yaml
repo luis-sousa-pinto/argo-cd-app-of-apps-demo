@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://argoproj.github.io/argo-helm
     chart: argo-cd
-    #targetRevision: 'v1.11.0'
+    targetRevision: 'v5.46.6'
     helm:
       parameters:
         - name: create_namespace
