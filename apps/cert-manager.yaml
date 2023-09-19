@@ -6,7 +6,7 @@ metadata:
   finalizers:
   - resources-finalizer.argocd.argoproj.io
 spec:
-  project: apps
+  project: digital
   source:
     repoURL: https://charts.jetstack.io
     chart: cert-manager
@@ -16,7 +16,7 @@ spec:
         - name: installCRDs
           value: 'true'
   destination:
-    namespace: cert-manager
+    namespace: digital
     name: in-cluster
   syncPolicy:
     automated:
